@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Trang chủ chính</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hệ thống quản lý nguyên, vật liệu</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li>
+                    <a href="./index2.html">Trang chủ</a>
+                </li>
+                <li class="active">
+                    <a class="a-color" href="./index3.html">Kiểm tra</a>
+                </li>
+                <li>
+                    <a href="./index5.html">Lập hóa đơn</a>
+                </li>
+                <li>
+                    <a href="./index4.html">Liên hệ</a>
+                </li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title">XIN CHÀO!</p>
+            <p class="msg">Hệ thống quản lý, nguyên vật liệu kho, quản lý nhà bếp đảm bảo kiểm soát thông tin và mang đến chất lượng tốt nhất cho người sử dụng!</p>
+            <button class="cta">Tìm hiểu thêm</button>
+        </section>
+
+        <section class="right">
+            <img src="/images/food4.jpg" alt="Langing image">
+        </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+
+</body>
+
+</html>
